@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %} Menu {% endblock %}
+
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row row-col-3 g-4">
+        <div class="col-4">
+            <div class="card">
+                <img src="{% static 'Home/images/food1.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="col-4 card">
+                <img src="{% static 'Home/images/food1.jpg' %}" alt="">
+        </div>
+        <div class="col-4 card">
+                <img src="{% static 'Home/images/food1.jpg' %}" alt="">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
