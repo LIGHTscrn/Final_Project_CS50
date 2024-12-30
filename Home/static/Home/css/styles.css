@@ -1,5 +1,6 @@
-.header-1{
-    max-width: 100%;
-    min-height: 200px;
-    color: white;
-}
+.bg-img {
+  background-image: url("../images/thumbnail.png");
+  background-size: cover;
+  background-position: center; }
+
+/*# sourceMappingURL=styles.css.map */
