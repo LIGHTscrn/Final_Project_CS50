@@ -1,0 +1,40 @@
+{% extends "Home/base.html" %}
+{% load static %}
+{% block title %}About Us - Some Cafe{% endblock %}
+{% block custcss %}
+<link rel="stylesheet" href="{% static 'Home/css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<header class="bg-dark text-white text-center py-5">
+    <div class="container">
+        <h1>About Some Cafe</h1>
+        <p class="lead">Where taste and tradition meet.</p>
+    </div>
+</header>
+
+<section class="py-5">
+    <div class="container">
+        <!-- About Us Section -->
+        <div class="mb-5 text-center">
+            <h2 class="mb-4">Our Story</h2>
+            <p>
+                At <strong>Some Cafe</strong>, we are passionate about serving delicious meals in a warm and inviting environment.
+                Established in [Year], we take pride in using the freshest ingredients to craft dishes that are as delightful
+                as they are memorable. Whether you're here for a quick coffee or a hearty meal, our goal is to make every visit special.
+            </p>
+        </div>
+        <div class="text-center">
+            <h2 class="mb-4">Our Vision & Mission</h2>
+            <p>
+                Our vision is to be the go-to cafe for food lovers and coffee enthusiasts alike. We aim to provide
+                a space where families, friends, and colleagues can come together to enjoy great food and warm hospitality.
+            </p>
+            <p>
+                We believe in sustainability and supporting local producers to ensure the highest quality ingredients
+                while giving back to our community.
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}

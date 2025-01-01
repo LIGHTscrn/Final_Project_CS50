@@ -1,0 +1,51 @@
+{% extends "Home/base.html" %}
+{% load static %}
+{% block title %}Welcome to Some Cafe{% endblock %}
+{% block custcss %}
+<link rel="stylesheet" href="{%static 'Home/css/styles.css' %}">
+{% endblock %}
+
+{% block content %}
+<header class="bg-img text-white text-center py-5">
+    <div class="container">
+        <h1>Welcome to Some Cafe</h1>
+        <p class="lead">A place where taste meets the soul</p>
+        <a href="#" class="btn btn-primary btn-lg">Reserve a Table</a>
+    </div>
+</header>
+
+<section class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Discover Our Delights</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="{% static 'Home/images/food4.jpg' %}" class="card-img-top" height="290px" alt="Delicious Meals">
+                    <div class="card-body">
+                        <h5 class="card-title">Delicious Meals</h5>
+                        <p class="card-text">Savor the flavors of our freshly prepared dishes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="{% static 'Home/images/ambience.webp' %}" height="290px" class="card-img-top" alt="Cozy Ambiance">
+                    <div class="card-body">
+                        <h5 class="card-title">Cozy Ambiance</h5>
+                        <p class="card-text">Relax and enjoy your time in our comfortable environment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="{% static 'Home/images/service.jpg' %}" class="card-img-top" height="290px" alt="service">
+                    <div class="card-body">
+                        <h5 class="card-title">Exceptional Service</h5>
+                        <p class="card-text">Service that takes care of you and your family</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
